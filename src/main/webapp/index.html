@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Start Page</title>
+	<title>Formulario</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<script>
-		function validateForm() {
-			var x = document.forms["myForm"]["num"].value;
-			if (isNaN(x) || x == "") {
-				alert("El valor ingresado no es un número");
+		function validar() {
+			var num = document.getElementById("numero").value;
+			if (isNaN(num)) {
+				alert("Debe ingresar un valor numérico.");
 				return false;
 			}
+			return true;
 		}
 	</script>
 </head>
 <body>
-	<h1>Hello World!</h1>
-	<form name="myForm" method="POST" action="./myServlet">
-		<label for="num">Ingrese un número:</label>
-		<input type="text" id="id" name="id"><br><br>
-		<input type="submit" value="Enviar" onclick="return validateForm()">
+  <h1>Hello World!</h1>
+	<form method="POST" action="./SampleServlet2" onsubmit="return validar()">
+		<label for="numero">Ingrese un número:</label>
+		<input type="number" id="id" name="id">
+		<button type="submit">Enviar</button>
 	</form>
 </body>
 </html>

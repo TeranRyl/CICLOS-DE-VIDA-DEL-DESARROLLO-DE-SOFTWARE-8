@@ -1,11 +1,14 @@
 package edu.eci.cvds.servlet;
 
+import edu.eci.cvds.servlet.Todo;
+import edu.eci.cvds.servlet.Service;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+//import javax.ws.rs.NotFoundException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Writer;
@@ -13,10 +16,11 @@ import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Optional;
 
+//********** Para indicar en qué URL el servlet interceptará las peticiones GET, agregue al método la anotación**********
 @WebServlet(
-        urlPatterns = "/myServlet" // Url que quiere que sea del servidor
+        urlPatterns = "/SampleServlet2" // Url que quiere que sea del servidor
 )
-public class myServlet  extends HttpServlet {
+public class SampleServlet2  extends HttpServlet {
     static final long serialVersionUID = 35L;
 
     @Override
