@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
 
-<head>
+<h:head>
   <title>JUEGO PEREZ TERAN - ADIVINA EL NUMERO</title>
   <style>
     body {
@@ -39,9 +39,9 @@
       margin: auto;
     }
   </style>
-</head>
+</h:head>
 
-<body>
+<h:body>
 <h:form id="guess_form">
 
   <p:outputLabel id="numberToGuess" value="#{guessBean.numberToGuess}" style="display: none;" />
@@ -79,6 +79,6 @@
   </div>
 
 </h:form>
-</body>
+</h:body>
 
 </html>

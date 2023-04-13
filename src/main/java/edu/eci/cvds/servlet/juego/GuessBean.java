@@ -1,13 +1,12 @@
 package edu.eci.cvds.servlet.juego;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
-
-import org.springframework.stereotype.Component;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.io.Serializable;
+import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ManagedBean;
+import org.springframework.stereotype.Component;
 
 @Component
 @ManagedBean(name = "guessBean")
